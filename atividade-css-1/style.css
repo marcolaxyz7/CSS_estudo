@@ -1,0 +1,26 @@
+header {
+  background-color: blue;
+  margin: 0;
+}
+
+.card {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 400px;
+  border-radius: 20px;
+  border: 2px solid blue;
+}
+
+.divisao-card {
+  margin-top: 50%;
+}
+
+.container-cards {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
