@@ -11,29 +11,115 @@
         box-shadow: none;
       }
 
+      body {
+        height: 100vh;
+        background-color: rgb(218, 216, 216);
+      }
+
       .container {
-        border: 1px solid green;
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        background-color: gray;
+        justify-content: space-around;
         gap: 10px;
+        background-color: white;
+        width: 80%;
       }
 
       .cards {
         border: 1px solid orange;
-        height: 400px;
-        width: 300px;
-        background-color: orange;
+        height: 200px;
+        width: 200px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        height: 100vh;
+        align-items: center;
+      }
+
+      .img-card {
+        width: 150px;
+      }
+
+      header {
+        height: 80px;
+        background-color: yellow;
+      }
+
+      .logo-cabecalho {
+        width: 80px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .logo-navegacao {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 50px;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="cards"></div>
-      <div class="cards"></div>
-      <div class="cards"></div>
-      <div class="cards"></div>
+    <header>
+      <div class="logo-navegacao">
+        <img class="logo-cabecalho" src="/img/logo-mercado-livre.png" alt="" />
+        <div class="">
+          <a href="">Categoria</a>
+          <a href="">Ofertas</a>
+          <a href="">Cupom</a>
+          <a href="">Supermercado</a>
+          <a href="">Moda</a>
+          <a href="">Mercado play</a>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="container">
+        <div class="cards">
+          <img class="img-card" src="/img/carro.png" alt="img-card" />
+          <p>Carro automotivo para corrida de formula 3...</p>
+        </div>
+        <div class="cards">
+          <img class="img-card" src="/img/carro.png" alt="img-card" />
+          <p>Carro automotivo para corrida de formula 3...</p>
+        </div>
+        <div class="cards">
+          <img class="img-card" src="/img/carro.png" alt="img-card" />
+          <p>Carro automotivo para corrida de formula 3...</p>
+        </div>
+        <div class="cards">
+          <img class="img-card" src="/img/carro.png" alt="img-card" />
+          <p>Carro automotivo para corrida de formula 3...</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="cards">
+          <img class="img-card" src="/img/carro.png" alt="img-card" />
+          <p>Carro automotivo para corrida de formula 3...</p>
+        </div>
+        <div class="cards">
+          <img class="img-card" src="/img/carro.png" alt="img-card" />
+          <p>Carro automotivo para corrida de formula 3...</p>
+        </div>
+        <div class="cards">
+          <img class="img-card" src="/img/carro.png" alt="img-card" />
+          <p>Carro automotivo para corrida de formula 3...</p>
+        </div>
+        <div class="cards">
+          <img class="img-card" src="/img/carro.png" alt="img-card" />
+          <p>Carro automotivo para corrida de formula 3...</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
