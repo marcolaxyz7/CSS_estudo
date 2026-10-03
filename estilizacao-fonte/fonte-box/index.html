@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flex Box</title>
     <style>
+      :root {
+        --altura-cabecalho: 80px;
+        --cor-tema-padrao-1: yellow;
+        --cor-tema-segundaria: white;
+      }
+
       * {
         margin: 0;
         padding: 0;
@@ -38,8 +44,8 @@
         display: flex;
         flex-direction: column;
         gap: 50px;
-        height: 100vh;
         align-items: center;
+        height: calc(100vh - var(--altura-cabecalho));
       }
 
       .img-card {
@@ -47,8 +53,8 @@
       }
 
       header {
-        height: 80px;
-        background-color: yellow;
+        height: var(--altura-cabecalho);
+        background-color: var(--cor-tema-padrao-1);
       }
 
       .logo-cabecalho {
@@ -66,6 +72,11 @@
         justify-content: space-between;
         align-items: center;
         padding-left: 50px;
+      }
+
+      footer {
+        background-color: var(--cor-tema-segundaria);
+        height: 500px;
       }
     </style>
   </head>
@@ -121,5 +132,7 @@
         </div>
       </div>
     </div>
+
+    <footer></footer>
   </body>
 </html>
