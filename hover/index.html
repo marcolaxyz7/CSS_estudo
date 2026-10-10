@@ -4,6 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exemplos com hover</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 32px;
+        background-color: #f3f4f6;
+        color: #1f2937;
+      }
+
+      section {
+        background-color: white;
+        padding: 24px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+      }
+
+      h2 {
+        font-size: 25px;
+        margin-top: 0px;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      .botao-cor {
+        background-color: #2563eb;
+        padding: 12px 20px;
+        border-radius: 12px;
+        border: none;
+        color: white;
+        transition: background-color 0.3s;
+      }
+
+      .botao-cor:hover {
+        background-color: #1e40af;
+      }
+
+      .link {
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .link:hover {
+        text-decoration: underline;
+        color: blue;
+      }
+
+      .card-hamburguer {
+        width: 240px;
+        padding: 10px;
+        border: 1px solid #d8d8d8;
+        border-radius: 10px;
+        transition: box-shadow 0.3s;
+        cursor: pointer;
+      }
+
+      .card-hamburguer:hover {
+        box-shadow: 0px 5px 20px rgb(161, 161, 161);
+      }
+
+      .botao-zoom {
+        background-color: #15803d;
+        padding: 12px 24px;
+        border: none;
+        color: white;
+        border-radius: 10px;
+        transition: transform 0.3s;
+      }
+
+      .botao-zoom:hover {
+        transform: scale(1.1);
+      }
+
+      .card-movimento {
+        border: 1px solid #c4c3c3;
+        width: 240px;
+        padding: 10px;
+        border-radius: 10px;
+        transition: transform 0.3s;
+      }
+
+      .card-movimento:hover {
+        box-shadow: 0px 5px 20px rgb(161, 161, 161);
+        transform: translateY(-6px);
+      }
+
+      .imagem {
+        width: 260px;
+        transition: opacity 0.3s ease-in;
+      }
+
+      .imagem:hover {
+        opacity: 0.3;
+      }
+    </style>
   </head>
   <body>
     <h1>Exemplos com Hover</h1>
@@ -22,8 +118,8 @@
     <section>
       <h2>3. Adicionar sombra</h2>
 
-      <div>
-        <h3>Hamburger artesanal</h3>
+      <div class="card-hamburguer">
+        <h3>Hamburguer artesanal</h3>
         <p>Pão, hamburguer e alface</p>
         <p>R$ 60,00</p>
       </div>
